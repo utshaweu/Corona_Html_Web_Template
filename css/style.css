@@ -1,0 +1,541 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+}
+ul,ol{
+  list-style-type: none;
+}
+img{
+  vertical-align: middle;
+  border: 0;
+}
+
+/* ===========================================================================================
+                                          Navbar Part Css
+============================================================================================== */
+.navbar{
+  padding-top: 22px;
+  padding-bottom: 22px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #29304e;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Nunito Sans', sans-serif;
+  text-transform: capitalize;
+  transition: all linear .3s;
+  position: relative;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+  color: #f04438;
+}
+.navbar-light .navbar-nav .nav-link.active{
+  color: #f04438;
+}
+.navbar-light .navbar-nav .nav-link::after{
+  position: absolute;
+  content: '';
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25px;
+  height: 23px;
+  background: url(../images/hover.png) no-repeat;
+  opacity: 0;
+  transition: all linear .3s;
+}
+.navbar-light .navbar-nav .nav-link.active::after{
+  opacity: 1;
+  top: -20px;
+}
+.navbar-light .navbar-nav .nav-link:hover::after{
+  opacity: 1;
+  top: -20px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+/* ==============================================================================================
+                                                Banner Part Css
+================================================================================================= */
+#banner{
+  padding-top: 140px;
+}
+.banner-content h2{
+  font-family: 'Karla', sans-serif;
+  font-size: 30px;
+  color: #f04438;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-top: 125px;
+}
+.banner-content h3{
+  font-family: 'Gilroy', sans-serif;
+  font-size: 90px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #29304e;
+}
+.banner-content span{
+  position: relative;
+  color: #ffffff;
+}
+.banner-content span::after{
+  position: absolute;
+  content: '';
+  top: 22px;
+  left: 0;
+  width: 191px;
+  height: 73px;
+  background: #f04438;
+  z-index: -1;
+  border-radius: 3px;
+}
+.banner-content p{
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #29304e;
+  margin-top: 10px;
+  padding-right: 72px;
+  padding-bottom: 16px;
+}
+.banner-btn .btn{
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 12px 35px;
+  border-radius: 30px;
+}
+.banner-btn .btn-outline-success {
+  color: #ffffff;
+  background-color: #f04438;
+  background-image: none;
+  border-color: #f04438;
+  transition: all linear .3s;
+}
+.banner-btn .btn-outline-success:hover{
+  background: #29304e;
+  border-color: #29304e;
+}
+.banner-btn .btn-outline-success.focus, .btn-outline-success:focus {
+  box-shadow: none;
+}
+.menu-bg{
+  background: #f5f5f5;
+  position: fixed;
+  animation: bg 1s;
+  width: 100%;
+  top: 0;
+  z-index: 99999;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+@keyframes bg{
+  from{top: -50px;}
+  to{top: 0px;}
+}
+
+/* ============================================================================================
+                                             About Part Css 
+===============================================================================================*/
+#about{
+  padding-top: 150px;
+}
+.head-title h1{
+  background: #f04438;
+  color: #ffffff;
+  display: inline-block;
+  font-family: 'Karla', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  border-radius: 3px;
+}
+.about-content h2{
+  font-family: 'Gilroy', sans-serif;
+  font-size: 60px;
+  color: #29304e;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.about-content p{
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #29304e;
+  line-height: 26px;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+.about-content span{
+  font-family: 'Karla', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #29304e;
+}
+.about-cases{
+  margin-top: 70px;
+}
+.about-case-item{
+  background: #f04438;
+  display: inline-block;
+  padding-top: 7px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 50px;
+  position: relative;
+}
+.about-case-item::after{
+  position: absolute;
+  content: '';
+  top: 0;
+  right: -13px;
+  width: 49px;
+  height: 46px;
+  background: url(../images/virus.png) no-repeat;
+}
+.about-case-item::before{
+  position: absolute;
+  content: '';
+  top: 107px;
+  left: 66px;
+  width: 2px;
+  height: 250px;
+  background: #29304e;
+}
+.about-case-item p{
+  font-family: 'Gilroy', sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 300;
+  text-transform: capitalize;
+  margin-bottom: 14px;
+  margin-top: -10px;
+}
+.about-case-item span{
+  font-family: 'Gilroy', sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.about-all-item{
+  padding-top: 32px;
+  padding-left: 157px;
+}
+.about-all-item p{
+  font-family: 'Gilroy', sans-serif;
+  font-size: 36px;
+  color: #f04438;
+  font-weight: bold;
+  margin-top: 27px;
+  position: relative;
+}
+.about-all-item span{
+  font-family: 'Gilroy', sans-serif;
+  font-size: 24px;
+  color: #29304e;
+  font-weight: 500;
+}
+.about-all-item p::after{
+  position: absolute;
+  content: '';
+  top: 28px;
+  left: -91px;
+  width: 70px;
+  height: 2px;
+  background: url(../images/line.png) no-repeat;
+}
+.about-all-item p::before{
+  position: absolute;
+  content: '';
+  top: 22px;
+  left: -23px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #29304e;
+}
+
+/* =========================================================================================
+                                         Spread Part Css
+============================================================================================ */
+#spread{
+  padding-top: 150px;
+}
+.head-title-two h1{
+  background: #29304e;
+  color: #ffffff;
+  display: inline-block;
+  font-family: 'Karla', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  border-radius: 3px;
+}
+.trans-title h2{
+  font-family: 'Gilroy', sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  color: #f04438;
+  text-transform: capitalize;
+  margin-bottom: 70px;
+}
+.spread-item {
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  transition: all linear .3s;
+}
+.spread-item:hover{
+  -webkit-box-shadow: 1px 4px 0px -1px rgba(221,221,221,0.5);
+  -moz-box-shadow: 1px 4px 0px -1px rgba(221,221,221,0.5);
+  box-shadow: 1px 4px 0px -1px rgba(221,221,221,0.5);
+  transform: translateY(-1px);
+}
+.spread-item:hover h3{
+  color: rgba(240,68,56,.30);
+}
+.spread-item h3{
+  position: absolute;
+  font-family: 'Gilroy', sans-serif;
+  font-size: 90px;
+  font-weight: 900;
+  color: rgba(240,68,56,.10);
+  top: -36px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all linear .3s;
+}
+.spread-item h2{
+  font-family: 'Gilroy', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #29304e;
+}
+.spread-item p{
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #29304e;
+  line-height: 26px;
+  padding: 0 21px;
+}
+
+/* ===============================================================================================
+                                          Symptoms Part Css
+===================================================================================================*/
+#symptoms{
+  padding-top: 150px;
+}
+.symptoms-img img{
+  margin-top: 50px;
+}
+.cmn-symptoms ul{
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #29304e;
+  margin-left: 25px;
+}
+.cmn-symptoms ul li{
+ position: relative;
+}
+.cmn-symptoms ul li::after{
+  position: absolute;
+  content: '';
+  top: 10px;
+  left: -10px;
+  width: 5px;
+  height: 5px;
+  background: #f04438;
+  border-radius: 50%;
+}
+.cmn-symptoms h3{
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  color: #29304e;
+  font-weight: 700;
+  margin-top: 10px;
+}
+.mr1{
+  padding-right: 17px;
+}
+.mr2{
+  padding-right: 11px;
+}
+
+/* ===============================================================================================
+                                           Protect Part Css
+================================================================================================== */
+#protect{
+  padding-top: 150px;
+}
+.spread-item img{
+  padding-bottom: 20px;
+  height: 82px;
+}
+
+/* ===============================================================================================
+                                        Protect Yourself Part Css 
+=================================================================================================== */
+#pro-yourself{
+  padding-top: 150px;
+}
+.mr3 h1{
+  background: #f04438;
+}
+.mr4 h2{
+  color: #29304e;
+}
+.cmn-symptoms h4{
+  font-family: 'Gilroy', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #29304e;
+  margin-bottom: 30px;
+}
+.cmn-symptoms span{
+  font-weight: 700;
+  color: #f04438;
+}
+.mr5{
+  padding-right: 50px;
+}
+.mr6{
+  padding-top: 85px;
+}
+.pro-yourself-two{
+  margin-top: 80px;
+}
+.mr7{
+  padding-top: 80px;
+  padding-left: 56px;
+}
+
+/* =============================================================================================
+                                      Protect Others Part Css
+================================================================================================== */
+#pro-others{
+  padding-top: 150px;
+}
+.mr8 img{
+  height: 85px;
+}
+
+/* ====================================================================================================
+                                        Corona Update Part Css
+======================================================================================================= */
+#c-update{
+  padding-top: 150px;
+}
+.mr9{
+  margin-top: 0;
+}
+.mr10{
+  background: #29304e;
+}
+.about-cases-two{
+  padding-left: 43px;
+}
+.about-case-items{
+  background: #29304e;
+  display: inline-block;
+  padding-top: 7px;
+  padding-left: 35px;
+  padding-right: 35px;
+  border-radius: 50px;
+  position: relative;
+}
+.about-case-items::after{
+  position: absolute;
+  content: '';
+  top: 0;
+  right: -13px;
+  width: 49px;
+  height: 46px;
+  background: url(../images/virus.png) no-repeat;
+}
+.about-case-items::before{
+  position: absolute;
+  content: '';
+  top: 76px;
+  left: 3px;
+  width: 2px;
+  height: 250px;
+  background: #29304e;
+}
+.about-case-items p{
+  font-family: 'Gilroy', sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 300;
+  text-transform: capitalize;
+  margin-bottom: 14px;
+  margin-top: -10px;
+}
+.about-case-items span{
+  font-family: 'Gilroy', sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.about-all-items{
+  padding-left: 94px;
+}
+.about-all-items p{
+  font-family: 'Gilroy', sans-serif;
+  font-size: 36px;
+  color: #f04438;
+  font-weight: bold;
+  margin-top: 27px;
+  padding-left: 20px;
+  position: relative;
+}
+.about-all-items span{
+  font-family: 'Gilroy', sans-serif;
+  font-size: 24px;
+  color: #29304e;
+  font-weight: 500;
+}
+.about-all-items p::after{
+  position: absolute;
+  content: '';
+  top: 28px;
+  left: -91px;
+  width: 92px;
+  height: 2px;
+  background: url(../images/line2.png) no-repeat;
+}
+.about-all-items p::before{
+  position: absolute;
+  content: '';
+  top: 22px;
+  left: 0px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #29304e;
+}
+
+/* ===============================================================================================
+                                           Back to Top Part Css
+=================================================================================================== */
+.back-to-top{
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 9999;
+  display: none;
+}

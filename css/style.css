@@ -302,7 +302,7 @@ img{
   -webkit-box-shadow: 1px 4px 0px -1px rgba(221,221,221,0.5);
   -moz-box-shadow: 1px 4px 0px -1px rgba(221,221,221,0.5);
   box-shadow: 1px 4px 0px -1px rgba(221,221,221,0.5);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 .spread-item:hover h3{
   color: rgba(240,68,56,.30);
@@ -530,6 +530,140 @@ img{
 }
 
 /* ===============================================================================================
+                                          Footer Top Part Css
+================================================================================================= */
+#footer-top{
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+.bt1{
+  border-bottom: 1px solid rgba(221,221,221,0.5);
+  padding-bottom: 100px;
+}
+.footer-logo p{
+  padding-top: 20px;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  color: #29304e;
+  padding-bottom: 10px;
+}
+.footer-social-icon a i{
+  font-size: 14px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background: rgba(221,221,221,0.5);
+  color: #29304e;
+  transition: all linear .3s;
+}
+.footer-social-icon a i:hover{
+  color: #fff;
+  background: #f04438;
+}
+.useful-links h2{
+  font-family: 'Gilroy', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #29304e;
+  padding-bottom: 15px;
+}
+.useful-links ul li{
+  padding-bottom: 10px;
+  color: #29304e;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  transition: all linear .3s;
+}
+.useful-links ul li:hover{
+  transform: translateY(-1px);
+}
+.useful-links ul li a{
+  color: #29304e;
+  transition: all linear .3s;
+}
+.useful-links ul li a:hover{
+  color: #f04438;
+}
+.contact h2{
+  font-family: 'Gilroy', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #29304e;
+  padding-bottom: 15px;
+}
+.contact-social-icon i{
+  font-size: 14px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  background: #f04438;
+  color: #ffffff;
+}
+.contact-address p{
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  color: #29304e;
+  line-height: 26px;
+  margin-left: 5px;
+}
+.pt1{
+  padding-top: 20px;
+}
+.pt2{
+  padding-top: 20px;
+}
+
+/* =================================================================================================
+                                          Footer Bottom Part Css
+==================================================================================================== */
+#footer-bottom{
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background: #29304e;
+}
+.copyright h3{
+  font-family: 'Gilroy', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #dddddd;
+
+}
+.copyright-nav{
+  display: block;
+  text-align: right;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+.copyright-nav li{
+  display: inline-block;
+  margin-right: 8px;
+}
+.copyright-nav li a{
+  color: #dddddd;
+  transition: all linear .3s;
+}
+.copyright-nav li a:hover{
+  color: #f04438;
+}
+.copyright-nav li:nth-of-type(1):after,.copyright-nav li:nth-of-type(2):after {
+  content: "/";
+  position: relative;
+  right: -6px;
+  color: #dddddd;
+}
+.copyright-nav li:first-child{
+  margin-left: 0;
+}
+.copyright-nav li:last-child{
+  margin-right: 0;
+}
+/* ===============================================================================================
                                            Back to Top Part Css
 =================================================================================================== */
 .back-to-top{
@@ -538,4 +672,23 @@ img{
   bottom: 30px;
   z-index: 9999;
   display: none;
+}
+
+/* ===================================================================================================
+                                          Preloader Part Css
+==================================================================================================== */
+.preloader{
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: fixed;
+  z-index: 999999999;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+}
+.preloader img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }

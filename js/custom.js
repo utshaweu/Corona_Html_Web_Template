@@ -1,6 +1,12 @@
 $(function(){
   'use strict'
 
+  //Preloader js
+  $(window).on('load',function(){
+    $(".preloader").delay(1000).fadeOut(1000);
+  });
+
+ 
   //Sticky Menu js
   $(window).scroll(function(){
     var scrolling = $(this).scrollTop();
@@ -29,7 +35,7 @@ $(function(){
 
   //Smooth Scroll js
   var html_body = $('html, body');
-  $('nav a').on('click', function () {
+  $('a').on('click', function () {
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
           var target = $(this.hash);
           target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -41,5 +47,6 @@ $(function(){
           }
       }
   });	
+
 
 });
